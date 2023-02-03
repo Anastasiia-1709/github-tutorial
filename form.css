@@ -1,0 +1,39 @@
+body {
+  font-family: sans-serif;
+  line-height: 1.5;
+}
+
+input,
+textarea {
+  padding: 8px;
+  font-family: inherit;
+  font-size: inherit;
+}
+
+.label {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 8px;
+}
+
+textarea {
+  resize: vertical;
+}
+fieldset label {
+  display: block;
+}
+.form-group {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid black;
+  border-radius: 4px;
+}
+
+.form-group p {
+  margin-top: 0;
+  margin-bottom: 10px;
+  font-weight: 700;
+  font-size: 20px;
+}
