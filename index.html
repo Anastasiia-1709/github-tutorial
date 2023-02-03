@@ -31,6 +31,9 @@
           <li><a href=""></a> Description</li>
           <li><a href=""></a> Report block</li>
         </ul>
+        <a href="./form.html" target="_blank" rel="noreferrer noopener"
+          >Forms</a
+        >
       </nav>
     </header>
     <h1 class="title">Lorem ipsum dolor sit amet</h1>
@@ -549,6 +552,122 @@ Amid great storms, whom grace assured so To live upright and smile at fortune's 
       </p>
       <a href="" class="link-one">Читати далі...</a>
     </section>
+    <div class="form">
+      <form name="sign-up" autocomplete="on" novalidate>
+        <div class="sign">
+          <label class="form-text">
+            Username
+            <input
+              required
+              pattern="^[a-zA-Z]+\s[a-zA-Z]+$"
+              title="Username must be two words separated by space."
+              class="form-sign"
+              type="text"
+              name="text"
+              autofocus
+              placeholder="Eva Johnson"
+            />
+          </label>
+          <label class="form-text">
+            Password
+            <input
+              class="form-sign"
+              type="password"
+              name="password"
+              maxlength="5"
+            />
+          </label>
+          <label class="form-text">
+            Age
+            <input
+              type="number"
+              class="form-sign"
+              name="age"
+              min="18"
+              max="120"
+            />
+          </label>
+          <label class="form-text">
+            Phone number
+            <input type="tel" class="form-sign" name="phone_number" />
+          </label>
+          <label class="form-text">
+            Interest rate
+            <input
+              type="range"
+              class="form-sign"
+              name="interst_rate"
+              min="5"
+              max="30"
+              step="5"
+            />
+          </label>
+          <button type="submit">Submit</button>
+        </div>
+      </form>
+    </div>
+
+    <div class="form-date">
+      <div class="form-center">
+        <form>
+          <label>
+            Date
+            <input
+              class="input-date"
+              type="date"
+              name="date"
+              min="1990-01-01"
+              max="2023-02-03"
+            />
+          </label>
+          <label>
+            Time
+            <input class="input-date" type="time" name="time" />
+          </label>
+          <label>
+            Date and Time
+            <input
+              class="input-date"
+              type="datetime-local"
+              min="1920-01-01T00:00"
+              max="2023-02-03T00:00"
+            />
+          </label>
+        </form>
+      </div>
+    </div>
+
+    <form>
+      <label class="form-text" for="user_email">Email</label>
+      <input type="email" name="email" id="user_email" />
+
+      <label class="form-text" for="user_password">Password</label>
+      <input type="password" name="password" id="user_password" />
+      <button class="form-text" type="submit">Submit</button>
+    </form>
+    <form>
+      <p>Choose a color</p>
+      <label> <input type="radio" name="color" value="green" /> Green</label>
+      <label>
+        <input type="radio" name="color" value="red" checked /> Red</label
+      >
+      <label> <input type="radio" name="color" value="blue" /> Blue</label>
+    </form>
+    <form>
+      <p>What are your hobbies?</p>
+      <label>
+        <input type="checkbox" name="hobby" value="dancing" checked />
+        Dancing
+      </label>
+      <label>
+        <input type="checkbox" name="hobby" value="music" />
+        Music
+      </label>
+      <label>
+        <input type="checkbox" name="hobby" value="gardening" />
+        Gardening
+      </label>
+    </form>
     <footer>
       <p><span>All rights reserved.</span> &COPY; Lex, 2020</p>
       <p>All rights reserved. &#169; Lex, 2020</p>
